@@ -1,14 +1,11 @@
 #include <stdio.h>
 
 #define SIZE 5
-
 int main() {
-
     int queue[SIZE];
     int a = -1;   
     int b = -1;  
     int choice, value;
-
     while(1) {
         scanf("%d", &choice);
         if(choice == 1) {
@@ -17,7 +14,6 @@ int main() {
                 printf("Queue is Full\n");
             }
             else {
-                printf("Enter value: ");
                 scanf("%d", &value);
 
                 if(a == -1) 
@@ -30,7 +26,7 @@ int main() {
         else if(choice == 2) {
 
             if(a == -1) {
-                printf("Queue is Empty\n");
+                printf("Queue is Empty");
             }
             else {
                 printf("Deleted: %d\n", queue[a]);
@@ -44,8 +40,6 @@ int main() {
                 }
             }
         }
-
-        // DISPLAY
         else if(choice == 3) {
 
             if(a == -1) {
